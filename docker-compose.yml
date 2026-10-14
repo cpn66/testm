@@ -1,0 +1,36 @@
+version: "3.8"
+
+services:
+  ml_build:
+    image: rst_ml_build
+    build:
+      context: .
+      target: rst_ml_build
+  ml_server:
+    build:
+      context: .
+      target: prod
+    environment:
+      PORT: 3030
+      SETTINGS_INI: |
+        # токен и адрес сервера backend
+        [backend]
+        token=018af529-b79c-778e-aee8-848a55ab3012
+        url_server=https://test.backend.rst.kay-com.net/api/v1/
+    depends_on:
+      - ml_build
+    ports:
+      - "3030:3030"
+    deploy:
+      resources:
+#        limits:
+#          cpus: '4'
+#          memory: 4096M
+        reservations:
+          cpus: '2'
+          memory: 2048M
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "200m"
+        max-file: "3"

@@ -1,0 +1,39 @@
+{
+    "sequence_of_sheets": [
+        "title",
+        "foreword",
+        "introduction",
+        "content-list",
+        "introduction",
+        "content",
+        "application",
+        "bibliography",
+        "keywords",
+        "end"
+    ],
+    "required": [
+        "title", "content"
+    ],
+    "box": {
+        "gost": "ПМГ",
+        "end-gost": "Издание официальное",
+        "bibliography": "Библиография",
+        "application": "Приложение",
+        "keywords": "Ключевые слова",
+        "foreword": "Предисловие",
+        "content": ["Дата введения", "Срок действия"],
+        "introduction": "Введение"
+    },
+
+    "anchords": {
+            "title": [],
+            "content-list": ["Содержание","СОДЕРЖАНИЕ"],
+            "foreword": ["1 РАЗРАБОТАН", "Предисловие"],
+            "introduction": ["Введение","Методические рекомендации"],
+            "content": ["Дата введения", "Область применения", "Срок действия"],
+            "application": ["Приложение","ПРИЛОЖЕНИЕ"],
+            "bibliography": ["Библиография"],
+            "keywords": ["Ключевые слова"],
+            "end": []
+    }
+}

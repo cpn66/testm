@@ -1,0 +1,37 @@
+{
+    "sequence_of_sheets": [
+        "title",
+        "foreword",
+        "introduction",
+        "content-list",
+        "introduction",
+        "content",
+        "application",
+        "bibliography",
+        "keywords",
+        "end"
+    ],
+    "required": [
+        "title", "content"
+    ],
+    "box": {
+        "end-gost": "Издание официальное",
+        "bibliography": "Библиография",
+        "application": "Приложение",
+        "keywords": "Ключевые слова",
+        "foreword": "Предисловие",
+        "content": ["Несоблюдение стандарта преследуется по закону", "Дата введения", "Настоящие рекомендации", "Срок действия"],
+        "introduction": "Введение"
+    },
+    "anchords": {
+            "title": [],
+            "content-list": ["Содержание","СОДЕРЖАНИЕ"],
+            "foreword": ["РАЗРАБОТАН", "ИСПОЛНИТЕЛИ", "ВНЕСЕН"],
+            "introduction": ["Введение"],
+            "content": ["Несоблюдение стандарта преследуется по закону", "Настоящий стандарт", "Дата введения", "Постановлением"],
+            "application": ["Приложение","ПРИЛОЖЕНИЕ"],
+            "bibliography": ["Библиография"],
+            "keywords": ["Ключевые слова"],
+            "end": []
+    }
+}
